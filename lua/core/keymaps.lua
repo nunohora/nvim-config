@@ -8,12 +8,6 @@ end
 map("i", "<C-s>", "<CMD>w<CR>")
 map("n", "<C-s>", "<CMD>w<CR>")
 
--- Undo and Redo
-map("n", "<C-z>", "u")
-map("i", "<C-z>", "<CMD>u<CR>")
-map("n", "<CS-z>", "<C-r>")
-map("i", "<CS-z>", "<C-O><C-r>")
-
 -- Quit
 map("n", "<C-q>", "<CMD>q<CR>")
 map("i", "<C-q>", "<CMD>q<CR>")
