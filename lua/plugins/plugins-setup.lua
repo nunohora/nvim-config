@@ -1,15 +1,5 @@
 return {
 	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-			"MunifTanjim/nui.nvim",
-			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-		},
-	},
-	{
 		"akinsho/toggleterm.nvim",
 		version = "*",
 		opts = {
@@ -19,7 +9,14 @@ return {
 			require("toggleterm").setup({})
 		end,
 	},
-	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
+	{
+		"akinsho/bufferline.nvim",
+		version = "*",
+		dependencies = "nvim-tree/nvim-web-devicons",
+		config = function()
+			require("bufferline").setup({})
+		end,
+	},
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()

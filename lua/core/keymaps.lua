@@ -34,3 +34,9 @@ map("n", "<C-Left>", "<C-w><")
 map("n", "<C-Right>", "<C-w>>")
 map("n", "<C-Up>", "<C-w>+")
 map("n", "<C-Down>", "<C-w>-")
+
+-- navigate bufferline / tabs
+map("n", "<C-]>", "<CMD>BufferLineCycleNext<CR>")
+map("i", "<C-]>", "<CMD>BufferLineCycleNext<CR>")
+map("n", "<C-[>", "<CMD>BufferLineCyclePrev<CR>")
+-- map("i", "<C-[>", "<CMD>BufferLineCyclePrev<CR>")
