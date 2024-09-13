@@ -38,5 +38,8 @@ map("n", "<C-Down>", "<C-w>-")
 -- navigate bufferline / tabs
 map("n", "<C-]>", "<CMD>BufferLineCycleNext<CR>")
 map("i", "<C-]>", "<CMD>BufferLineCycleNext<CR>")
-map("n", "<C-[>", "<CMD>BufferLineCyclePrev<CR>")
+-- map("n", "<C-[>", "<CMD>BufferLineCyclePrev<CR>")
 -- map("i", "<C-[>", "<CMD>BufferLineCyclePrev<CR>")
+
+-- toggle terminal
+map("n", "<leader>nt", "<CMD>ToggleTerm<CR>")

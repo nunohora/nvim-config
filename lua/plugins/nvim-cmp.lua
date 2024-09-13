@@ -15,8 +15,7 @@ return {
 	-- opts = {
 	--   auto_brackets = { "python" }
 	-- }
-	-- ```
-	opts = function()
+	config = function()
 		vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
 		local cmp = require("cmp")
 		local defaults = require("cmp.config.default")()
@@ -42,7 +41,6 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
 				{ name = "path" },
-			}, {
 				{ name = "buffer" },
 			}),
 			formatting = {
