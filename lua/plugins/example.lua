@@ -9,28 +9,21 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  { 'akinsho/toggleterm.nvim', version = "*", opts = {--[[ things you want to change go here]] } },
+  { 'akinsho/toggleterm.nvim', version = "*", opts = {--[[ things you want to change go here]] }},
   -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
-
+  { "folke/tokyonight.nvim", lazy = true, opts = { style = "moon" }},
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "tokyonight",
     },
   },
-
-  -- change trouble config
   {
     "folke/trouble.nvim",
     -- opts will be merged with the parent spec
     opts = { use_diagnostic_signs = true },
   },
-
-  -- disable trouble
-  -- { "folke/trouble.nvim", enabled = false },
-  
   {
     "Isrothy/neominimap.nvim",
     version = "v3.*.*",
