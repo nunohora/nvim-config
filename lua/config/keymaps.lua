@@ -9,3 +9,5 @@ vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("n", "<leader>tt", "<CMD>ToggleTerm<CR>")
 vim.keymap.set("n", "<leader>t1", "<CMD>ToggleTerm 1<CR>")
 vim.keymap.set("n", "<leader>t2", "<CMD>ToggleTerm 2<CR>")
+
+vim.keymap.set("n", "<C-w>", "<CMD>bp|bd #<CR>")

@@ -7,7 +7,7 @@ vim.opt.autoread = true
 -- disable neovim generating a swapfile and showing the error
 vim.opt.swapfile = false
 vim.opt.ttimeoutlen = 0
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 32
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.title = true
